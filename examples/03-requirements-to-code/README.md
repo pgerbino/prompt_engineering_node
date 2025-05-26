@@ -10,7 +10,7 @@ This example demonstrates how to use GitHub Copilot to convert requirements into
 ## Prerequisites
 
 - Node.js 18+
-- pnpm 8+
+- npm 9+
 - GitHub Copilot subscription
 - VS Code with GitHub Copilot extension
 
@@ -18,13 +18,13 @@ This example demonstrates how to use GitHub Copilot to convert requirements into
 
 1. Install dependencies:
 ```bash
-pnpm install
+npm install
 ```
 
 ## Running the Example
 
 ```bash
-pnpm example 03
+npm run example 03
 ```
 
 This will:

@@ -1,75 +1,82 @@
 # Security Audit Example
 
-This example demonstrates how to use AI agents to perform security audits on your codebase. The agent will help you:
-- Identify common security vulnerabilities
-- Analyze code for OWASP Top 10 risks
-- Suggest security improvements
-- Generate security audit reports
+This example demonstrates how to use GitHub Copilot to perform security audits on your code. You'll learn how to:
+- Write effective prompts for security analysis
+- Get comprehensive security assessments from Copilot
+- Identify vulnerabilities and security risks
+- Generate security recommendations
+- Follow security best practices
 
 ## Prerequisites
 
 - Node.js 18+
-- pnpm 8+
-- OpenAI API key
+- npm 9+
+- GitHub Copilot subscription
+- VS Code with GitHub Copilot extension
 
 ## Setup
 
-1. Ensure you have set up your `.env` file with your OpenAI API key:
+1. Install dependencies:
 ```bash
-OPENAI_API_KEY=your-api-key-here
-```
-
-2. Install dependencies:
-```bash
-pnpm install
+npm install
 ```
 
 ## Running the Example
 
 ```bash
-pnpm example 06
+npm run example 06
 ```
+
+This will:
+1. Load the code to audit
+2. Generate a structured prompt for Copilot
+3. Provide instructions for using the prompt with Copilot
 
 ## Example Structure
 
 ```
 06-security-audit/
-├── inputs/           # Code to audit
-│   ├── auth.ts      # Authentication implementation
-│   ├── api.ts       # API endpoints
-│   └── database.ts  # Database operations
-├── expected/        # Expected audit output
-│   └── audit-report.md
+├── inputs/           # Input files
+│   └── code.ts      # Code to audit
 └── run.mjs         # Example runner
 ```
 
+## How to Use
+
+1. Run the example to get the security audit prompt
+2. Open a new markdown file in VS Code with GitHub Copilot enabled
+3. Copy the generated prompt
+4. Paste it into the file
+5. Let Copilot generate the security audit
+6. Review and refine the audit report
+
 ## What You'll Learn
 
-- How to structure prompts for security analysis
-- Common security vulnerabilities in Node.js applications
-- Best practices for secure coding
-- How to generate comprehensive security reports
+- How to structure prompts for security audits
+- Best practices for security analysis
+- Techniques for identifying vulnerabilities
+- Methods for generating security recommendations
+- How to create comprehensive security reports
 
 ## Customizing the Example
 
-You can modify the files in the `inputs/` directory to audit your own code. The agent will:
-1. Analyze the code for security issues
-2. Identify potential vulnerabilities
-3. Suggest security improvements
-4. Generate a detailed audit report
+You can modify the input file to audit your own code:
+1. Update `code.ts` with your implementation
+2. Run the example to get a new security audit
+3. Review and adapt the generated recommendations
 
 ## Expected Output
 
-The agent will generate:
-1. Security vulnerability report
-2. Severity rankings
-3. Remediation suggestions
-4. Best practice recommendations
-5. Code improvement examples
+Copilot will generate:
+1. Vulnerability assessment
+2. Security risk analysis
+3. Best practice recommendations
+4. Remediation steps
+5. Security improvement plan
 
 ## Next Steps
 
 After completing this example, you can:
-1. Try auditing different types of applications
-2. Customize the security audit parameters
+1. Try auditing different types of code
+2. Customize the security audit prompt
 3. Move on to the performance profiling example (07) 

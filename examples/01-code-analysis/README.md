@@ -10,7 +10,7 @@ This example demonstrates how to use GitHub Copilot to analyze and understand co
 ## Prerequisites
 
 - Node.js 18+
-- pnpm 8+
+- npm 9+
 - GitHub Copilot subscription
 - VS Code with GitHub Copilot extension
 
@@ -18,13 +18,13 @@ This example demonstrates how to use GitHub Copilot to analyze and understand co
 
 1. Install dependencies:
 ```bash
-pnpm install
+npm install
 ```
 
 ## Running the Example
 
 ```bash
-pnpm example 01
+npm run example 01
 ```
 
 This will:

@@ -21,24 +21,24 @@ git clone https://github.com/your-org/software-agents-for-node.git
 cd software-agents-for-node
 
 # Install dependencies
-pnpm install
+npm install
 
 # Run your first example
-pnpm example 01
+npm run example 01
 ```
 
 ## 📚 Examples
 
 | # | Scenario | Description | Command |
 |---|----------|-------------|---------|
-| 01 | Code Analysis | Analyze and understand complex codebases | `pnpm example 01` |
-| 02 | Refactor | Automated code refactoring | `pnpm example 02` |
-| 03 | Requirements to Code | Convert requirements into working code | `pnpm example 03` |
-| 04 | Impact Assessment | Analyze changes and their effects | `pnpm example 04` |
-| 05 | Test Generation | Generate comprehensive test suites | `pnpm example 05` |
-| 06 | Security Audit | Find and fix security vulnerabilities | `pnpm example 06` |
-| 07 | Performance Profile | Optimize application performance | `pnpm example 07` |
-| 08 | Release Notes | Generate semantic versioned release notes | `pnpm example 08` |
+| 01 | Code Analysis | Analyze and understand complex codebases | `npm run example 01` |
+| 02 | Refactor | Automated code refactoring | `npm run example 02` |
+| 03 | Requirements to Code | Convert requirements into working code | `npm run example 03` |
+| 04 | Impact Assessment | Analyze changes and their effects | `npm run example 04` |
+| 05 | Test Generation | Generate comprehensive test suites | `npm run example 05` |
+| 06 | Security Audit | Find and fix security vulnerabilities | `npm run example 06` |
+| 07 | Performance Profile | Optimize application performance | `npm run example 07` |
+| 08 | Release Notes | Generate semantic versioned release notes | `npm run example 08` |
 
 ## 📁 Project Structure
 
@@ -65,7 +65,7 @@ software-agents-for-node/
 ## 🛠️ Prerequisites
 
 - Node.js 18+
-- pnpm 8+
+- npm 9+
 - GitHub Copilot subscription
 - VS Code with GitHub Copilot extension
 
