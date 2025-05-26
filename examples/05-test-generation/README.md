@@ -1,54 +1,58 @@
 # Test Generation Example
 
-This example demonstrates how to use GitHub Copilot to generate comprehensive test suites for your code. You'll learn how to:
-- Write effective prompts for test generation
-- Get complete test suites from Copilot
-- Create test cases for edge cases
-- Set up test fixtures and mocks
-- Follow testing best practices
+This example demonstrates how to use GitHub Copilot to generate comprehensive test suites for your code. The example includes a sample implementation that you can use to practice test generation with Copilot.
 
-## Prerequisites
+## Example Code
 
-- Node.js 18+
-- npm 9+
-- GitHub Copilot subscription
-- VS Code with GitHub Copilot extension
+The `code.ts` file contains a sample e-commerce system implementation that needs testing. The code includes:
+- Product management functionality
+- Shopping cart operations
+- Price calculations
+- Inventory management
+- Error handling
 
-## Setup
+## How to Use with GitHub Copilot
 
-1. Install dependencies:
-```bash
-npm install
+1. Open `code.ts` in VS Code with GitHub Copilot enabled
+2. Create a new test file (e.g., `code.test.ts`)
+3. Use the following prompt structure with Copilot:
+
+```markdown
+# Test Generation
+
+Please generate a comprehensive test suite for the following TypeScript code. Focus on:
+
+1. Unit Tests
+   - Test all public methods
+   - Cover success and error cases
+   - Verify business logic
+   - Test edge cases
+
+2. Test Organization
+   - Group related tests
+   - Use descriptive test names
+   - Follow testing best practices
+   - Include test setup and teardown
+
+3. Test Coverage
+   - Test all code paths
+   - Include boundary tests
+   - Test error conditions
+   - Verify data transformations
+
+4. Mocking Strategy
+   - Identify dependencies to mock
+   - Create mock implementations
+   - Set up test fixtures
+   - Handle async operations
+
+Here's the code to test:
+
+[Paste the contents of code.ts here]
 ```
 
-## Running the Example
-
-```bash
-npm run example 05
-```
-
-This will:
-1. Load the code to be tested
-2. Generate a structured prompt for Copilot
-3. Provide instructions for using the prompt with Copilot
-
-## Example Structure
-
-```
-05-test-generation/
-├── inputs/           # Input files
-│   └── code.ts      # Code to test
-└── run.mjs         # Example runner
-```
-
-## How to Use
-
-1. Run the example to get the test generation prompt
-2. Open a new test file in VS Code with GitHub Copilot enabled
-3. Copy the generated prompt
-4. Paste it into the file
-5. Let Copilot generate the test suite
-6. Review and refine the generated tests
+4. Let Copilot generate the test suite
+5. Review and refine the generated tests
 
 ## What You'll Learn
 
@@ -58,25 +62,9 @@ This will:
 - Methods for creating test fixtures
 - How to generate comprehensive test coverage
 
-## Customizing the Example
-
-You can modify the input file to generate tests for your own code:
-1. Update `code.ts` with your implementation
-2. Run the example to get a new test suite
-3. Review and adapt the generated tests
-
-## Expected Output
-
-Copilot will generate:
-1. Test suite structure
-2. Unit test cases
-3. Edge case tests
-4. Mock implementations
-5. Test fixtures
-
 ## Next Steps
 
 After completing this example, you can:
-1. Try generating tests for different types of code
+1. Try generating tests for different parts of the codebase
 2. Customize the test generation prompt
 3. Move on to the security audit example (06) 

@@ -1,54 +1,58 @@
 # Requirements to Code Example
 
-This example demonstrates how to use GitHub Copilot to convert requirements into working TypeScript code. You'll learn how to:
-- Write effective prompts for code generation
-- Get comprehensive implementations from Copilot
-- Apply TypeScript best practices
-- Generate proper documentation and tests
-- Create maintainable and scalable code
+This example demonstrates how to use GitHub Copilot to convert requirements into working TypeScript code. The example includes a sample requirements document that you can use to practice implementing features with Copilot.
 
-## Prerequisites
+## Example Requirements
 
-- Node.js 18+
-- npm 9+
-- GitHub Copilot subscription
-- VS Code with GitHub Copilot extension
+The `requirements.md` file contains a sample feature specification for an e-commerce system. The requirements include:
+- User authentication and authorization
+- Product catalog management
+- Shopping cart functionality
+- Order processing
+- Payment integration
 
-## Setup
+## How to Use with GitHub Copilot
 
-1. Install dependencies:
-```bash
-npm install
+1. Open `requirements.md` in VS Code with GitHub Copilot enabled
+2. Create a new TypeScript file for your implementation
+3. Use the following prompt structure with Copilot:
+
+```markdown
+# Requirements Implementation
+
+Please implement the following requirements in TypeScript. Focus on:
+
+1. Architecture
+   - Design appropriate interfaces and types
+   - Follow TypeScript best practices
+   - Implement proper error handling
+   - Use appropriate design patterns
+
+2. Code Organization
+   - Create modular and reusable components
+   - Follow SOLID principles
+   - Implement proper separation of concerns
+   - Add comprehensive documentation
+
+3. Error Handling
+   - Define custom error types
+   - Implement input validation
+   - Add proper error messages
+   - Handle edge cases
+
+4. Testing
+   - Make code testable
+   - Add necessary interfaces for mocking
+   - Document test scenarios
+   - Include example usage
+
+Here are the requirements to implement:
+
+[Paste the contents of requirements.md here]
 ```
 
-## Running the Example
-
-```bash
-npm run example 03
-```
-
-This will:
-1. Load the requirements
-2. Generate a structured prompt for Copilot
-3. Provide instructions for using the prompt with Copilot
-
-## Example Structure
-
-```
-03-requirements-to-code/
-├── inputs/           # Requirements to implement
-│   └── requirements.md  # Feature requirements
-└── run.mjs         # Example runner
-```
-
-## How to Use
-
-1. Run the example to get the implementation prompt
-2. Open a new TypeScript file in VS Code with GitHub Copilot enabled
-3. Copy the generated prompt
-4. Paste it into the file
-5. Let Copilot generate the implementation
-6. Review and refine the generated code
+4. Let Copilot generate the implementation
+5. Review and refine the generated code
 
 ## What You'll Learn
 
@@ -58,26 +62,9 @@ This will:
 - How to generate comprehensive documentation
 - Methods for creating testable code
 
-## Customizing the Example
-
-You can modify the `inputs/requirements.md` file to implement your own features. The prompt will help you:
-1. Get a complete TypeScript implementation
-2. Generate proper interfaces and types
-3. Create error handling and validation
-4. Produce documentation and tests
-
-## Expected Output
-
-Copilot will generate:
-1. A high-level design document
-2. TypeScript interfaces and types
-3. Complete implementation code
-4. Usage examples
-5. Testing strategy
-
 ## Next Steps
 
 After completing this example, you can:
-1. Try implementing different types of features
+1. Try implementing different requirements
 2. Customize the implementation prompt
 3. Move on to the impact assessment example (04) 

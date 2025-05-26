@@ -1,54 +1,58 @@
 # Security Audit Example
 
-This example demonstrates how to use GitHub Copilot to perform security audits on your code. You'll learn how to:
-- Write effective prompts for security analysis
-- Get comprehensive security assessments from Copilot
-- Identify vulnerabilities and security risks
-- Generate security recommendations
-- Follow security best practices
+This example demonstrates how to use GitHub Copilot to perform security audits on your code. The example includes a sample implementation with intentional security issues that you can use to practice security auditing with Copilot.
 
-## Prerequisites
+## Example Code
 
-- Node.js 18+
-- npm 9+
-- GitHub Copilot subscription
-- VS Code with GitHub Copilot extension
+The `code.ts` file contains a sample e-commerce system implementation with various security vulnerabilities. The code includes:
+- User authentication
+- Payment processing
+- Data validation
+- API endpoints
+- Database operations
 
-## Setup
+## How to Use with GitHub Copilot
 
-1. Install dependencies:
-```bash
-npm install
+1. Open `code.ts` in VS Code with GitHub Copilot enabled
+2. Create a new markdown file for your security audit
+3. Use the following prompt structure with Copilot:
+
+```markdown
+# Security Audit
+
+Please perform a comprehensive security audit of the following TypeScript code. Focus on:
+
+1. Authentication & Authorization
+   - Session management
+   - Access control
+   - Password handling
+   - Token security
+
+2. Data Security
+   - Input validation
+   - Data sanitization
+   - Encryption usage
+   - Secure storage
+
+3. API Security
+   - Endpoint protection
+   - Rate limiting
+   - CORS configuration
+   - Request validation
+
+4. Common Vulnerabilities
+   - SQL injection
+   - XSS attacks
+   - CSRF protection
+   - Dependency risks
+
+Here's the code to audit:
+
+[Paste the contents of code.ts here]
 ```
 
-## Running the Example
-
-```bash
-npm run example 06
-```
-
-This will:
-1. Load the code to audit
-2. Generate a structured prompt for Copilot
-3. Provide instructions for using the prompt with Copilot
-
-## Example Structure
-
-```
-06-security-audit/
-├── inputs/           # Input files
-│   └── code.ts      # Code to audit
-└── run.mjs         # Example runner
-```
-
-## How to Use
-
-1. Run the example to get the security audit prompt
-2. Open a new markdown file in VS Code with GitHub Copilot enabled
-3. Copy the generated prompt
-4. Paste it into the file
-5. Let Copilot generate the security audit
-6. Review and refine the audit report
+4. Let Copilot generate the security audit
+5. Review and refine the generated audit
 
 ## What You'll Learn
 
@@ -58,25 +62,9 @@ This will:
 - Methods for generating security recommendations
 - How to create comprehensive security reports
 
-## Customizing the Example
-
-You can modify the input file to audit your own code:
-1. Update `code.ts` with your implementation
-2. Run the example to get a new security audit
-3. Review and adapt the generated recommendations
-
-## Expected Output
-
-Copilot will generate:
-1. Vulnerability assessment
-2. Security risk analysis
-3. Best practice recommendations
-4. Remediation steps
-5. Security improvement plan
-
 ## Next Steps
 
 After completing this example, you can:
-1. Try auditing different types of code
+1. Try auditing different parts of the codebase
 2. Customize the security audit prompt
 3. Move on to the performance profiling example (07) 

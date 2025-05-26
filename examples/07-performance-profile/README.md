@@ -1,54 +1,58 @@
 # Performance Profiling Example
 
-This example demonstrates how to use GitHub Copilot to analyze and optimize code performance. You'll learn how to:
-- Write effective prompts for performance analysis
-- Get comprehensive performance assessments from Copilot
-- Identify performance bottlenecks
-- Generate optimization recommendations
-- Follow performance best practices
+This example demonstrates how to use GitHub Copilot to analyze and optimize code performance. The example includes a sample implementation with performance issues that you can use to practice performance profiling with Copilot.
 
-## Prerequisites
+## Example Code
 
-- Node.js 18+
-- npm 9+
-- GitHub Copilot subscription
-- VS Code with GitHub Copilot extension
+The `code.ts` file contains a sample e-commerce system implementation with various performance bottlenecks. The code includes:
+- Product search functionality
+- Order processing
+- Data aggregation
+- Caching mechanisms
+- Database operations
 
-## Setup
+## How to Use with GitHub Copilot
 
-1. Install dependencies:
-```bash
-npm install
+1. Open `code.ts` in VS Code with GitHub Copilot enabled
+2. Create a new markdown file for your performance analysis
+3. Use the following prompt structure with Copilot:
+
+```markdown
+# Performance Analysis
+
+Please analyze the performance of the following TypeScript code and provide optimization recommendations. Focus on:
+
+1. Algorithm Efficiency
+   - Time complexity
+   - Space complexity
+   - Resource usage
+   - Scalability
+
+2. Data Operations
+   - Database queries
+   - Data structures
+   - Memory usage
+   - I/O operations
+
+3. Caching Strategy
+   - Cache implementation
+   - Cache invalidation
+   - Memory management
+   - Performance trade-offs
+
+4. Optimization Opportunities
+   - Bottleneck identification
+   - Code improvements
+   - Architecture changes
+   - Best practices
+
+Here's the code to analyze:
+
+[Paste the contents of code.ts here]
 ```
 
-## Running the Example
-
-```bash
-npm run example 07
-```
-
-This will:
-1. Load the code to profile
-2. Generate a structured prompt for Copilot
-3. Provide instructions for using the prompt with Copilot
-
-## Example Structure
-
-```
-07-performance-profile/
-├── inputs/           # Input files
-│   └── code.ts      # Code to profile
-└── run.mjs         # Example runner
-```
-
-## How to Use
-
-1. Run the example to get the performance analysis prompt
-2. Open a new markdown file in VS Code with GitHub Copilot enabled
-3. Copy the generated prompt
-4. Paste it into the file
-5. Let Copilot generate the performance analysis
-6. Review and refine the analysis report
+4. Let Copilot generate the performance analysis
+5. Review and refine the generated analysis
 
 ## What You'll Learn
 
@@ -58,25 +62,9 @@ This will:
 - Methods for generating optimization recommendations
 - How to create comprehensive performance reports
 
-## Customizing the Example
-
-You can modify the input file to analyze your own code:
-1. Update `code.ts` with your implementation
-2. Run the example to get a new performance analysis
-3. Review and adapt the generated recommendations
-
-## Expected Output
-
-Copilot will generate:
-1. Performance bottleneck analysis
-2. Optimization opportunities
-3. Best practice recommendations
-4. Implementation suggestions
-5. Performance improvement plan
-
 ## Next Steps
 
 After completing this example, you can:
-1. Try analyzing different types of code
+1. Try analyzing different parts of the codebase
 2. Customize the performance analysis prompt
 3. Move on to the release notes example (08) 
