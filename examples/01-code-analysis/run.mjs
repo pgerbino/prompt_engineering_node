@@ -1,7 +1,6 @@
 import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { Agent } from '../../packages/core-agent/dist/index.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -13,52 +12,56 @@ async function main() {
       'utf-8'
     );
 
-    // Initialize the agent
-    const agent = new Agent({
-      temperature: 0.3, // Lower temperature for more focused analysis
-      maxTokens: 4000
-    });
-
-    // System prompt for code analysis
-    const systemPrompt = `You are an expert code analyst. Your task is to:
-1. Analyze the provided code
-2. Identify its structure and architecture
-3. Find potential issues and improvements
-4. Suggest documentation improvements
-5. Recommend refactoring opportunities
-
-Provide your analysis in a clear, structured markdown format.`;
-
-    // User prompt with the code to analyze
-    const userPrompt = `Please analyze the following TypeScript code:
+    // Create the analysis prompt
+    const analysisPrompt = `Please analyze the following TypeScript code and provide a comprehensive analysis:
 
 \`\`\`typescript
 ${sampleCode}
 \`\`\`
 
-Provide a comprehensive analysis following the structure:
-1. Overview
-2. Architecture
-3. Key Components
-4. Issues & Improvements
-5. Documentation Suggestions
-6. Refactoring Recommendations`;
+Please provide your analysis in the following structure:
 
-    // Run the analysis
-    console.log('🔍 Analyzing code...\n');
-    const response = await agent.run(systemPrompt, userPrompt);
-    
-    // Output the results
-    console.log('📊 Analysis Results:\n');
-    console.log(response.content);
-    
-    // Output usage statistics
-    if (response.usage) {
-      console.log('\n📈 Usage Statistics:');
-      console.log(`- Prompt tokens: ${response.usage.prompt_tokens}`);
-      console.log(`- Completion tokens: ${response.usage.completion_tokens}`);
-      console.log(`- Total tokens: ${response.usage.total_tokens}`);
-    }
+1. Overview
+   - Brief description of the code's purpose
+   - Main components and their relationships
+   - Key design patterns used
+
+2. Architecture
+   - Code organization
+   - Module dependencies
+   - Data flow
+
+3. Key Components
+   - Classes and interfaces
+   - Functions and methods
+   - Data structures
+
+4. Issues & Improvements
+   - Potential bugs or issues
+   - Performance concerns
+   - Security considerations
+   - Code quality suggestions
+
+5. Documentation Suggestions
+   - Missing documentation
+   - API documentation needs
+   - Code comments recommendations
+
+6. Refactoring Recommendations
+   - Code smells
+   - Anti-patterns
+   - Suggested improvements
+
+Format your response in markdown with clear sections and code examples where appropriate.`;
+
+    // Output the prompt for Copilot
+    console.log('🔍 Code Analysis Prompt:\n');
+    console.log(analysisPrompt);
+    console.log('\n📝 Instructions:');
+    console.log('1. Copy the prompt above');
+    console.log('2. Open the code in VS Code with GitHub Copilot');
+    console.log('3. Paste the prompt and let Copilot generate the analysis');
+    console.log('4. Review and refine the generated analysis as needed');
 
   } catch (error) {
     console.error('❌ Error:', error.message);
@@ -66,4 +69,4 @@ Provide a comprehensive analysis following the structure:
   }
 }
 
-main(); 
+main().catch(console.error); 

@@ -1,7 +1,6 @@
 import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { Agent } from '../../packages/core-agent/dist/index.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -13,59 +12,57 @@ async function main() {
       'utf-8'
     );
 
-    // Initialize the agent
-    const agent = new Agent({
-      temperature: 0.3, // Balanced temperature for creative but consistent output
-      maxTokens: 4000
-    });
-
-    // System prompt for requirements to code conversion
-    const systemPrompt = `You are an expert software architect and developer. Your task is to:
-1. Analyze the provided requirements
-2. Design a TypeScript implementation
-3. Generate production-ready code
-4. Include proper error handling and validation
-5. Follow best practices and design patterns
-
-Provide your implementation in a clear, structured format with:
-1. A high-level design document
-2. TypeScript interfaces and types
-3. Implementation code
-4. Usage examples
-5. Test cases`;
-
-    // User prompt with the requirements
-    const userPrompt = `Please implement a TypeScript solution for the following requirements:
+    // Create the implementation prompt
+    const implementationPrompt = `Please implement a TypeScript solution based on the following requirements:
 
 \`\`\`markdown
 ${requirements}
 \`\`\`
 
-Focus on:
-1. Clean, maintainable code
-2. TypeScript best practices
-3. Proper error handling
-4. Input validation
-5. Design patterns
-6. Documentation
+Please provide your implementation in the following structure:
 
-Provide a complete implementation with examples.`;
+1. High-Level Design
+   - System architecture
+   - Key components
+   - Data flow
+   - Design patterns to use
+   - Technology choices
 
-    // Run the implementation
-    console.log('🔍 Analyzing requirements...\n');
-    const response = await agent.run(systemPrompt, userPrompt);
-    
-    // Output the results
-    console.log('📊 Implementation Results:\n');
-    console.log(response.content);
-    
-    // Output usage statistics
-    if (response.usage) {
-      console.log('\n📈 Usage Statistics:');
-      console.log(`- Prompt tokens: ${response.usage.prompt_tokens}`);
-      console.log(`- Completion tokens: ${response.usage.completion_tokens}`);
-      console.log(`- Total tokens: ${response.usage.total_tokens}`);
-    }
+2. TypeScript Interfaces
+   - Core interfaces
+   - Type definitions
+   - Data models
+   - API contracts
+
+3. Implementation
+   - Complete TypeScript implementation
+   - Error handling
+   - Input validation
+   - Documentation
+   - Comments
+
+4. Usage Examples
+   - Code snippets
+   - API usage
+   - Common scenarios
+   - Error handling examples
+
+5. Testing Strategy
+   - Unit test structure
+   - Test cases
+   - Edge cases
+   - Integration tests
+
+Format your response in markdown with clear sections and code examples. Include both the implementation and usage examples.`;
+
+    // Output the prompt for Copilot
+    console.log('🔍 Implementation Prompt:\n');
+    console.log(implementationPrompt);
+    console.log('\n📝 Instructions:');
+    console.log('1. Copy the prompt above');
+    console.log('2. Open a new TypeScript file in VS Code with GitHub Copilot');
+    console.log('3. Paste the prompt and let Copilot generate the implementation');
+    console.log('4. Review and refine the generated code as needed');
 
   } catch (error) {
     console.error('❌ Error:', error.message);
@@ -73,4 +70,4 @@ Provide a complete implementation with examples.`;
   }
 }
 
-main(); 
+main().catch(console.error); 
