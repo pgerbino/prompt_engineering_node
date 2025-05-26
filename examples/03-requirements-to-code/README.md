@@ -20,7 +20,7 @@ The `requirements.md` file contains a sample feature specification for an e-comm
 ```markdown
 # Requirements Implementation
 
-Please implement the following requirements in TypeScript. Focus on:
+Please implement the requirements from the workspace in TypeScript. Focus on:
 
 1. Architecture
    - Design appropriate interfaces and types
@@ -45,10 +45,6 @@ Please implement the following requirements in TypeScript. Focus on:
    - Add necessary interfaces for mocking
    - Document test scenarios
    - Include example usage
-
-Here are the requirements to implement:
-
-[Paste the contents of requirements.md here]
 ```
 
 4. Let Copilot generate the implementation

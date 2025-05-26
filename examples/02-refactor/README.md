@@ -20,7 +20,7 @@ The `legacy.ts` file contains a sample e-commerce system implementation with var
 ```markdown
 # Code Refactoring
 
-Please refactor the following TypeScript code to improve its quality and maintainability. Focus on:
+Please refactor the TypeScript code in the workspace to improve its quality and maintainability. Focus on:
 
 1. Code Structure
    - Apply TypeScript best practices
@@ -45,10 +45,6 @@ Please refactor the following TypeScript code to improve its quality and maintai
    - Add input validation
    - Improve error messages
    - Handle edge cases
-
-Here's the code to refactor:
-
-[Paste the contents of legacy.ts here]
 ```
 
 4. Let Copilot generate the refactored code

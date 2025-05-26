@@ -22,7 +22,7 @@ The example includes two files:
 ```markdown
 # Impact Assessment
 
-Please analyze the impact of the proposed changes on the current codebase. Focus on:
+Please analyze the impact of the proposed changes in the workspace on the current codebase. Focus on:
 
 1. Technical Impact
    - Affected components and modules
@@ -47,14 +47,6 @@ Please analyze the impact of the proposed changes on the current codebase. Focus
    - Testing effort
    - Deployment complexity
    - Maintenance impact
-
-Here's the current codebase:
-
-[Paste the contents of current.ts here]
-
-And here are the proposed changes:
-
-[Paste the contents of changes.md here]
 ```
 
 4. Let Copilot generate the impact assessment

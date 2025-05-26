@@ -19,7 +19,7 @@ The `sample.ts` file contains a sample e-commerce system implementation that you
 ```markdown
 # Code Analysis
 
-Please analyze the following TypeScript code and provide a comprehensive code review. Focus on:
+Please analyze the TypeScript code in the workspace and provide a comprehensive code review. Focus on:
 
 1. Code Structure
    - Overall architecture and design patterns
@@ -45,10 +45,6 @@ Please analyze the following TypeScript code and provide a comprehensive code re
    - Missing or unclear documentation
    - API documentation needs
    - Code comments and explanations
-
-Here's the code to analyze:
-
-[Paste the contents of sample.ts here]
 ```
 
 4. Let Copilot generate the analysis

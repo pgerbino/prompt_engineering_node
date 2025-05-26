@@ -1,15 +1,15 @@
 # Release Notes Example
 
-This example demonstrates how to use GitHub Copilot to generate comprehensive release notes from your Git commit history. The example includes a sample commit history that you can use to practice generating release notes with Copilot.
+This example demonstrates how to use GitHub Copilot to generate comprehensive release notes from your project's commit history. The example includes a sample commit history and shows how to create well-structured release documentation.
 
 ## Example Data
 
-The `commits.json` file contains a sample Git commit history with various types of changes. The commits include:
+The example includes a `commits.json` file containing a sample commit history with:
 - Feature additions
 - Bug fixes
 - Performance improvements
-- Security updates
-- Documentation changes
+- Documentation updates
+- Dependency updates
 
 ## How to Use with GitHub Copilot
 
@@ -20,51 +20,47 @@ The `commits.json` file contains a sample Git commit history with various types 
 ```markdown
 # Release Notes Generation
 
-Please generate comprehensive release notes from the following Git commit history. Focus on:
+Please generate comprehensive release notes based on the commit history in the workspace. Include:
 
-1. Change Categorization
-   - New features
-   - Bug fixes
-   - Breaking changes
-   - Performance improvements
-   - Security updates
+1. New Features
+   - Major additions
+   - User-facing changes
+   - Configuration updates
+   - Integration changes
 
-2. Release Summary
-   - Version number
-   - Release date
-   - Major highlights
-   - Key improvements
+2. Bug Fixes
+   - Critical issues resolved
+   - Edge cases handled
+   - Error corrections
+   - Stability improvements
 
-3. Detailed Changes
-   - Feature descriptions
-   - Bug fix details
-   - Breaking change impacts
-   - Migration notes
+3. Performance Improvements
+   - Speed optimizations
+   - Resource usage
+   - Scalability enhancements
+   - Caching improvements
 
-4. Contributors
-   - Author credits
-   - Reviewers
-   - Special thanks
-
-Here's the commit history:
-
-[Paste the contents of commits.json here]
+4. Documentation
+   - API changes
+   - Usage updates
+   - Migration guides
+   - Known issues
 ```
 
 4. Let Copilot generate the release notes
-5. Review and refine the generated notes
+5. Review and refine the generated documentation
 
 ## What You'll Learn
 
 - How to structure prompts for release notes
-- Best practices for change categorization
-- Techniques for writing clear release notes
-- Methods for generating migration guides
-- How to create comprehensive release documentation
+- Techniques for categorizing changes
+- Methods for writing clear documentation
+- Best practices for release communication
+- How to generate comprehensive release notes
 
 ## Next Steps
 
 After completing this example, you can:
-1. Try generating notes for different commit histories
+1. Try generating notes for different types of releases
 2. Customize the release notes prompt
-3. Explore other examples in the repository 
+3. Explore other examples in the course 

@@ -1,54 +1,44 @@
 # Test Generation Example
 
-This example demonstrates how to use GitHub Copilot to generate comprehensive test suites for your code. The example includes a sample implementation that you can use to practice test generation with Copilot.
+This example demonstrates how to use GitHub Copilot to generate comprehensive test suites for your code. The example includes a sample implementation and shows how to generate unit tests, integration tests, and test documentation.
 
 ## Example Code
 
-The `code.ts` file contains a sample e-commerce system implementation that needs testing. The code includes:
-- Product management functionality
-- Shopping cart operations
-- Price calculations
-- Inventory management
-- Error handling
+The example includes a simple calculator implementation in `calculator.ts` with basic arithmetic operations:
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Error handling for division by zero
 
 ## How to Use with GitHub Copilot
 
-1. Open `code.ts` in VS Code with GitHub Copilot enabled
-2. Create a new test file (e.g., `code.test.ts`)
+1. Open `calculator.ts` in VS Code with GitHub Copilot enabled
+2. Create a new test file (e.g., `calculator.test.ts`)
 3. Use the following prompt structure with Copilot:
 
 ```markdown
-# Test Generation
+# Test Suite Generation
 
-Please generate a comprehensive test suite for the following TypeScript code. Focus on:
+Please generate a comprehensive test suite for the calculator implementation in the workspace. Include:
 
 1. Unit Tests
-   - Test all public methods
-   - Cover success and error cases
-   - Verify business logic
-   - Test edge cases
+   - Test cases for each operation
+   - Edge cases and error conditions
+   - Input validation
+   - Expected outputs
 
-2. Test Organization
-   - Group related tests
-   - Use descriptive test names
-   - Follow testing best practices
-   - Include test setup and teardown
+2. Integration Tests
+   - Operation combinations
+   - State management
+   - Error propagation
+   - Performance considerations
 
-3. Test Coverage
-   - Test all code paths
-   - Include boundary tests
-   - Test error conditions
-   - Verify data transformations
-
-4. Mocking Strategy
-   - Identify dependencies to mock
-   - Create mock implementations
-   - Set up test fixtures
-   - Handle async operations
-
-Here's the code to test:
-
-[Paste the contents of code.ts here]
+3. Test Documentation
+   - Test descriptions
+   - Setup requirements
+   - Test data
+   - Expected results
 ```
 
 4. Let Copilot generate the test suite
@@ -57,14 +47,14 @@ Here's the code to test:
 ## What You'll Learn
 
 - How to structure prompts for test generation
-- Best practices for writing tests
-- Techniques for testing edge cases
-- Methods for creating test fixtures
-- How to generate comprehensive test coverage
+- Techniques for writing comprehensive test suites
+- Methods for testing edge cases
+- Best practices for test documentation
+- How to generate different types of tests
 
 ## Next Steps
 
 After completing this example, you can:
-1. Try generating tests for different parts of the codebase
+1. Try generating tests for different implementations
 2. Customize the test generation prompt
 3. Move on to the security audit example (06) 
