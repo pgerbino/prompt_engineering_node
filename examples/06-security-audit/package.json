@@ -1,0 +1,16 @@
+{
+  "name": "security-audit-example",
+  "version": "1.0.0",
+  "description": "Example of using AI agents for security auditing",
+  "type": "module",
+  "scripts": {
+    "start": "node run.mjs"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.5",
+    "typescript": "^5.3.3"
+  }
+} 

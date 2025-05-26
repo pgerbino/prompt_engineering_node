@@ -1,0 +1,38 @@
+{
+  "name": "software-agents-for-node",
+  "version": "0.1.0",
+  "description": "A toolkit for Node.js developers to effectively use AI software agents",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "example": "node scripts/run-example.mjs",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "node",
+    "typescript",
+    "openai",
+    "langchain"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ]
+} 
